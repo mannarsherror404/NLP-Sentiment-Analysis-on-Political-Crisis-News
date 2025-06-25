@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NLP Project Dashboard</title>
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <audio autoplay loop hidden>
+        <source src="background_music.mp3" type="audio/mpeg">
+    </audio>
+
+    <header>
+        <h1>NLP Project Dashboard</h1>
+    </header>
+
+    <section id="project-overview">
+        <h2>Project Overview</h2>
+        <p>This dashboard represents the key aspects and changes between the two project files: Before and After the
+            analysis of the NLP project.</p>
+    </section>
+
+    <section id="files-section">
+        <h2>Uploaded Files</h2>
+        <div class="file-card">
+            <h3>Before Processing</h3>
+            <a href="https://colab.research.google.com/drive/162P6xxDDWcxAakseEDEr9BDn8oRw-sA3?usp=sharing"
+                target="_blank">Open Before Notebook in Colab</a>
+        </div>
+
+        <div class="file-card">
+            <h3>After Processing</h3>
+            <a href="https://colab.research.google.com/drive/1Oon49EV1LUhO3forARbigMIcx1mGlqgx?usp=sharing"
+                target="_blank">Open After Notebook in Colab</a>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    </section>
+
+    <!-- Promo Section for NLP Project Parts -->
+    <section class="promo-section">
+        <div class="promo-container">
+            <ul class="promo-list">
+                <li class="promo-item">
+                    <div class="promo-card">
+                        <h3>Define the Project Scope</h3>
+                        <br>
+                        <pre>Analyze sentiment shifts</pre>
+                        <pre>in news around the</pre>
+                        <pre>Bangladesh military coup.</pre>
+                    </div>
+                </li>
+                <li class="promo-item">
+                    <div class="promo-card">
+                        <h3>Data Collection</h3>
+                        <br>
+                        <pre>Gathered news articles from</pre>
+                        <pre>various sources, pre-</pre>
+                        <pre>and post-coup.</pre>
+                    </div>
+                </li>
+                <li class="promo-item">
+                    <div class="promo-card">
+                        <h3>Data Preprocessing</h3>
+                        <br>
+                        <pre>Text Cleaning</pre>
+                        <pre> Remove HTML tags</pre>
+                        <pre>special characters</pre>
+                        <pre>stopwords</pre>
+                        <pre>and perform stemming</pre>
+                        <pre>lemmatization</pre>
+                        <pre>Vectorization</pre>
+                        <pre>POS Tagging</pre>
+                    </div>
+                </li>
+                <li class="promo-item">
+                    <div class="promo-card">
+                        <h3>Exploratory Data Analysis</h3>
+                        <br>
+                        <pre> Word Frequency Analysis</pre>
+                        <pre>Sentiment Distribution</pre>
+                        <pre>Collocations and Concordance</pre>
+                        <pre>Topic Modelling</pre>
+                    </div>
+                </li>
+                <li class="promo-item">
+                    <div class="promo-card">
+                        <h3>Model Selection for training</h3>
+                        <br>
+                        <pre>Logistic Regression</pre>
+                        <pre>Support Vector Machine (SVM)</pre>
+                        <pre>Random Forest</pre>
+                        <pre>VADER Sentiment Analysis</pre>
+                    </div>
+                </li>
+                <li class="promo-item">
+                    <div class="promo-card">
+                        <h3>Second Half</h3>
+                        <br>
+                        <pre>Data Preprocessing</pre>
+                        <pre>Model Architecture Setup</pre>
+                        <pre>Model Training</pre>
+                        <pre>Model Evaluation</pre>
+                        <pre>Sentiment Prediction Function</pre>
+                        <pre>Deployment on GitHub</pre>
+                        <pre>dashboard</pre>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Word Frequency Analysis Section -->
+
+    <section class="word-frequency">
+        <h2>Word Frequency Analysis</h2>
+        <div class="graphs">
+            <div class="graph-container">
+                <!-- Image for the "Before" graph -->
+                <img src="Graph1.jpg" alt="Word Frequency Before">
+            </div>
+            <div class="graph-container">
+                <!-- Image for the "After" graph -->
+                <img src="Graph2.jpg" alt="Word Frequency After">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Sentiment Distribution Section -->
+    <section class="sentiment-distribution">
+        <h2>Sentiment Distribution</h2>
+        <div class="graphs">
+            <div class="graph-container">
+                <!-- Image for "Positive Sentiment" -->
+                <img src="Graph3.jpg" alt="Positive Sentiment">
+            </div>
+            <div class="graph-container">
+                <!-- Image for "Negative Sentiment" -->
+                <img src="Graph4.jpg" alt="Negative Sentiment">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Collocations and Concordance Section -->
+    <section class="collocations-concordance">
+        <h2>Collocations and Concordance</h2>
+        <div class="text-content">
+            <h3>Before</h3>
+            <br>
+            <pre>[('archived', 'original'), ('pm', 'ist'), ('live', 'update')]</pre>
+            <br>
+            <h3>After</h3>
+            <br>
+            <pre>[('prime', 'minister'), ('awami', 'league'), ('sheikh', 'hasina')]</pre>
+        </div>
+    </section>
+
+    <!-- Topic Modelling Section -->
+    <section class="topic-modelling">
+        <h2>Topic Modelling</h2>
+        <div class="text-content">
+            <h3>Before</h3>
+            <br>
+            <h4>Topic #0:</h4>
+            <br>
+            <pre>bangladesh student original dhaka india share minister movement read people</pre>
+            <br>
+            <h3>After</h3>
+            <br>
+            <h4>Topic #0:</h4>
+            <br>
+            <pre>bangladesh hasina country political minister year new economic violence bangladeshi</pre>
+        </div>
+    </section>
+
+    <section class="model-selection">
+        <h2>Model Selection for Training</h2>
+
+        <!-- Logistic Regression Section -->
+        <div class="model-section">
+            <h3>Logistic Regression</h3>
+            <div class="graphs">
+                <div class="graph-container">
+                    <img src="Graph5.jpg" alt="Logistic Regression Before">
+                </div>
+                <div class="graph-container">
+                    <img src="Graph6.jpg" alt="Logistic Regression After">
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- Support Vector Machine (SVM) Section -->
+        <div class="model-section">
+            <h3>Support Vector Machine (SVM)</h3>
+            <div class="graphs">
+                <div class="graph-container">
+                    <img src="Graph7.jpg" alt="SVM Before">
+                </div>
+                <div class="graph-container">
+                    <img src="Graph8.jpg" alt="SVM After">
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- Random Forest Section -->
+        <div class="model-section">
+            <h3>Random Forest</h3>
+            <div class="graphs">
+                <div class="graph-container">
+                    <img src="Graph9.jpg" alt="Random Forest Before">
+                </div>
+                <div class="graph-container">
+                    <img src="Graph10.jpg" alt="Random Forest After">
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="best-model-section">
+            <h3>Best Model</h3>
+            <div class="best-model-3d"> <!-- This is the subsection -->
+                <img src="random_forest_image.jpg" alt="Random Forest Model">
+            </div>
+        </div>
+
+
+
+        <br>
+        <!-- VADER Sentiment Analysis Section -->
+        <div class="model-section">
+            <h3>VADER Sentiment Analysis</h3>
+            <div class="graphs">
+                <div class="graph-container">
+                    <img src="Graph11.jpg" alt="VADER Sentiment Before">
+                </div>
+                <div class="graph-container">
+                    <img src="Graph12.jpg" alt="VADER Sentiment After">
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <div class="background-4"></div>
+    <div class="background-4-5"></div>
+    <div class="background-5"></div>
+
+    <section id="nlp-project-files">
+        <h2>NLP Sentiment Analysis Project File</h2>
+        <div class="file-card">
+            <h3>Model Training and Prediction</h3>
+            <a href="https://colab.research.google.com/drive/1O3MdjmhyL5qCQk-CgzKa4SDM4FNECpF4?usp=sharing"
+                target="_blank">
+                Open NLP Project Notebook in Colab
+            </a>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>
+<footer>
+    <p>&copy; 2024 NLP Dashboard</p>
+</footer>
+</body>
+
+</html>
